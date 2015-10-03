@@ -1,0 +1,136 @@
+.banner {
+    background-attachment:fixed;
+    background-image:url("/Users/jimlee/Desktop/Jonathan's Programming/Bill Starr Calculator/Images/barbell.jpg");
+    background-position:center top;
+    background-size:cover;
+    text-align:center;
+    padding-top:2em;
+    padding-left:50em;
+    padding-bottom:13em;
+    color:#fff;
+    font-family:'Montserrat',sans-serif
+}
+
+.NumberTable {
+    background:-webkit-linear-gradient(90deg,#304352 10%,#d7d2cc 90%);
+/* Chrome 10+, Saf5.1+ */
+    background:-moz-linear-gradient(90deg,#304352 10%,#d7d2cc 90%);
+/* FF3.6+ */
+    background:-ms-linear-gradient(90deg,#304352 10%,#d7d2cc 90%);
+/* IE10 */
+    background:-o-linear-gradient(90deg,#304352 10%,#d7d2cc 90%);
+/* Opera 11.10+ */
+    background:linear-gradient(90deg,#304352 10%,#d7d2cc 90%)
+/* W3C */
+}
+
+table {
+    margin:0 auto
+}
+
+table td {
+    padding:10px;
+    border:1px solid;
+    background-color:silver
+}
+
+.OneMax {
+    font-family:'Montserrat',sans-serif;
+    font-size:15px;
+    padding-right:80px
+}
+
+#squatMax,#benchMax,#dlMax,#inclineMax,#rowMax {
+    background:no-repeat 10px 6px #333;
+    color:#fff;
+    width:40px;
+    padding:6px 15px 6px 35px;
+    margin-bottom:3px;
+    border-radius:20px;
+    transition:500ms all ease
+}
+
+#squatMax:hover,#benchMax:hover,#dlMax:hover,#inclineMax:hover,#rowMax:hover {
+    width:70px;
+    height:25px
+}
+
+#demobutton {
+    font-family:'pictos';
+    font-size:45px;
+    line-height:40px;
+    text-align:center;
+    color:rgba(0,0,0,0.5);
+    text-shadow:rgba(0,0,0,0.1) 0 -2px 1px,#fff 0 1px 2px;
+    width:200px;
+    height:60px;
+    padding:10px;
+    margin:50px auto;
+    position:static;
+    z-index:50;
+    cursor:pointer;
+    margin-top:50px;
+    background-color:transparent;
+    border:rgba(0,0,0,0.3) 1px solid;
+    border-top-color:rgba(0,0,0,0.1);
+    border-left-color:rgba(0,0,0,0.2);
+    border-right-color:rgba(0,0,0,0.2);
+    border-bottom-color:rgba(0,0,0,0.3);
+    box-shadow:inset rgba(255,255,255,0.3) -5px -30px 10px,inset rgba(255,255,255,0.3) 0 30px 10px,inset rgba(255,255,255,1) 0 2px 1px,rgba(0,0,0,0.4) 0 10px 15px;
+    -webkit-transition:-webkit-box-shadow 0 ease-in-out;
+    -khtml-transition:-khtml-box-shadow 0 ease-in-out;
+    -moz-transition:-moz-box-shadow 0 ease-in-out;
+    -o-transition:-o-box-shadow 0 ease-in-out;
+    transition:box-shadow 0 ease-in-out;
+    background-image:-webkit-radial-gradient(50% 0%,8% 50%,hsla(0,0%,100%,.2) 0%,hsla(0,0%,100%,0) 100%),-webkit-radial-gradient(50% 100%,12% 50%,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 100%),-webkit-radial-gradient(0% 50%,50% 7%,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 100%),-webkit-radial-gradient(100% 50%,50% 5%,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 100%),-webkit-repeating-radial-gradient(50% 50%,100% 100%,hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,0) 3%,hsla(0,0%,0%,.1) 3.5%),-webkit-repeating-radial-gradient(50% 50%,100% 100%,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 6%,hsla(0,0%,100%,.1) 7.5%),-webkit-repeating-radial-gradient(50% 50%,100% 100%,hsla(0,0%,100%,0) 0%,hsla(0,0%,100%,0) 1.2%,hsla(0,0%,100%,0) 2.2%)
+}
+
+#demobutton:before,#demobutton:after {
+    content:"";
+    display:block;
+    position:absolute
+}
+
+#demobutton:before {
+    z-index:-50;
+    width:200px;
+    height:64px;
+    margin-top:-15px;
+    margin-left:-11px;
+    background:#666;
+    background:-moz-linear-gradient(left,#666 0%,#bbb 50%,#666 100%);
+    background:-webkit-gradient(linear,left top,right top,color-stop(0%,#666),color-stop(50%,#bbb),color-stop(100%,#666));
+    background:-webkit-linear-gradient(left,#666 0%,#bbb 50%,#666 100%);
+    background:-o-linear-gradient(left,#666 0%,#bbb 50%,#666 100%);
+    background:-ms-linear-gradient(left,#666 0%,#bbb 50%,#666 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666',endColorstr='#666666',GradientType=1);
+    background:linear-gradient(left,#666 0%,#bbb 50%,#666 100%);
+    box-shadow:#000 0 0 2px
+}
+
+#demobutton:after {
+    z-index:-100;
+    width:70px;
+    height:70px;
+    margin-top:-60px;
+    margin-left:-16px;
+    background:rgba(0,0,0,0.1);
+    box-shadow:inset rgba(255,255,255,0.1) 0 -5px 5px,rgba(0,0,0,0.1) 0 3px 3px,rgba(255,255,255,0.05) 0 -3px 3px
+}
+
+#demobutton:hover {
+    color:rgba(0,0,0,0.6);
+    text-shadow:#fff 0 0 3px;
+    box-shadow:inset rgba(255,255,255,0.4) 0 -30px 15px,inset rgba(255,255,255,0.2) -25px 25px 10px,inset rgba(255,255,255,1) 0 2px 1px,rgba(0,0,0,0.4) 0 10px 15px
+}
+
+#demobutton:active {
+    margin-top:46px;
+    color:#fff;
+    box-shadow:inset rgba(255,255,255,0.4) 0 -30px 15px,inset rgba(255,255,255,0.2) -25px 25px 10px,inset rgba(255,255,255,1) 0 2px 1px,rgba(0,0,0,0.4) 0 2px 3px
+}
+
+#demobutton:active:before {
+    height:60px;
+    margin-top:-11px
+}

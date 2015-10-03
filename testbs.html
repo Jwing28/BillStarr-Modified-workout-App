@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Bill Starr 5x5: Modified</title>
+	<link href="CSS/testbs.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel=
+	'stylesheet' type='text/css'>
+	<script src="JS/testbs.js"></script>
+</head>
+
+<body>
+	<form>
+		<input style="display:none;" type="text"> 
+		<!--Try to get rid of this.. input text box||||||||||||||||||||||||||||||||||||||||||||||||||-->
+	</form>
+
+	<div class="banner">
+		<h1 style="text-align:center">Bill Starr 5x5 Calculator
+		(Modified)</h1><br>
+
+		<p style="text-align:center">B = Bench D = Deadlift P = Press/Incline
+		Bench R = Row S = Squat</p><br>
+
+		<h4>Please provide your 5 rep max for each below:</h4>
+
+		<div class="OneMax">
+			<input id="squatMax" type="text" value="0"> Squat<br>
+			<input id="benchMax" type="text" value="0"> Bench<br>
+			<input id="dlMax" type="text" value="0"> Deads<br>
+			<input id="inclineMax" type="text" value="0"> Incline<br>
+			<input id="rowMax" type="text" value="0"> bbRow
+		</div><br>
+		<input id="demobutton" type="button" value="Calculate">
+	</div>
+
+	<div class="NumberTable">
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M1S1">1</td>
+
+				<td id="M1S2">2</td>
+
+				<td id="M1S3">3</td>
+
+				<td id="M1S4">4</td>
+
+				<td id="M1S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M1B1">1</td>
+
+				<td id="M1B2">2</td>
+
+				<td id="M1B3">3</td>
+
+				<td id="M1B4">4</td>
+
+				<td id="M1B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M1R1">1</td>
+
+				<td id="M1R2">2</td>
+
+				<td id="M1R3">3</td>
+
+				<td id="M1R4">4</td>
+
+				<td id="M1R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W1S1">1</td>
+
+				<td id="W1S2">2</td>
+
+				<td id="W1S3">3</td>
+
+				<td id="W1S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W1I1">1</td>
+
+				<td id="W1I2">2</td>
+
+				<td id="W1I3">3</td>
+
+				<td id="W1I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W1D1">1</td>
+
+				<td id="W1D2">2</td>
+
+				<td id="W1D3">3</td>
+
+				<td id="W1D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F1S1">1</td>
+
+				<td id="F1S2">2</td>
+
+				<td id="F1S3">3</td>
+
+				<td id="F1S4">4</td>
+
+				<td id="F1S5">5</td>
+
+				<td id="F1S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F1B1">1</td>
+
+				<td id="F1B2">2</td>
+
+				<td id="F1B3">3</td>
+
+				<td id="F1B4">4</td>
+
+				<td id="F1B5">5</td>
+
+				<td id="F1B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F1R1">1</td>
+
+				<td id="F1R2">2</td>
+
+				<td id="F1R3">3</td>
+
+				<td id="F1R4">4</td>
+
+				<td id="F1R5">5</td>
+
+				<td id="F1R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M2S1">1</td>
+
+				<td id="M2S2">2</td>
+
+				<td id="M2S3">3</td>
+
+				<td id="M2S4">4</td>
+
+				<td id="M2S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M2B1">1</td>
+
+				<td id="M2B2">2</td>
+
+				<td id="M2B3">3</td>
+
+				<td id="M2B4">4</td>
+
+				<td id="M2B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M2R1">1</td>
+
+				<td id="M2R2">2</td>
+
+				<td id="M2R3">3</td>
+
+				<td id="M2R4">4</td>
+
+				<td id="M2R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W2S1">1</td>
+
+				<td id="W2S2">2</td>
+
+				<td id="W2S3">3</td>
+
+				<td id="W2S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W2I1">1</td>
+
+				<td id="W2I2">2</td>
+
+				<td id="W2I3">3</td>
+
+				<td id="W2I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W2D1">1</td>
+
+				<td id="W2D2">2</td>
+
+				<td id="W2D3">3</td>
+
+				<td id="W2D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F2S1">1</td>
+
+				<td id="F2S2">2</td>
+
+				<td id="F2S3">3</td>
+
+				<td id="F2S4">4</td>
+
+				<td id="F2S5">5</td>
+
+				<td id="F2S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F2B1">1</td>
+
+				<td id="F2B2">2</td>
+
+				<td id="F2B3">3</td>
+
+				<td id="F2B4">4</td>
+
+				<td id="F2B5">5</td>
+
+				<td id="F2B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F2R1">1</td>
+
+				<td id="F2R2">2</td>
+
+				<td id="F2R3">3</td>
+
+				<td id="F2R4">4</td>
+
+				<td id="F2R5">5</td>
+
+				<td id="F2R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M3S1">1</td>
+
+				<td id="M3S2">2</td>
+
+				<td id="M3S3">3</td>
+
+				<td id="M3S4">4</td>
+
+				<td id="M3S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M3B1">1</td>
+
+				<td id="M3B2">2</td>
+
+				<td id="M3B3">3</td>
+
+				<td id="M3B4">4</td>
+
+				<td id="M3B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M3R1">1</td>
+
+				<td id="M3R2">2</td>
+
+				<td id="M3R3">3</td>
+
+				<td id="M3R4">4</td>
+
+				<td id="M3R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W3S1">1</td>
+
+				<td id="W3S2">2</td>
+
+				<td id="W3S3">3</td>
+
+				<td id="W3S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W3I1">1</td>
+
+				<td id="W3I2">2</td>
+
+				<td id="W3I3">3</td>
+
+				<td id="W3I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W3D1">1</td>
+
+				<td id="W3D2">2</td>
+
+				<td id="W3D3">3</td>
+
+				<td id="W3D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F3S1">1</td>
+
+				<td id="F3S2">2</td>
+
+				<td id="F3S3">3</td>
+
+				<td id="F3S4">4</td>
+
+				<td id="F3S5">5</td>
+
+				<td id="F3S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F3B1">1</td>
+
+				<td id="F3B2">2</td>
+
+				<td id="F3B3">3</td>
+
+				<td id="F3B4">4</td>
+
+				<td id="F3B5">5</td>
+
+				<td id="F3B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F3R1">1</td>
+
+				<td id="F3R2">2</td>
+
+				<td id="F3R3">3</td>
+
+				<td id="F3R4">4</td>
+
+				<td id="F3R5">5</td>
+
+				<td id="F3R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M4S1">1</td>
+
+				<td id="M4S2">2</td>
+
+				<td id="M4S3">3</td>
+
+				<td id="M4S4">4</td>
+
+				<td id="M4S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M4B1">1</td>
+
+				<td id="M4B2">2</td>
+
+				<td id="M4B3">3</td>
+
+				<td id="M4B4">4</td>
+
+				<td id="M4B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M4R1">1</td>
+
+				<td id="M4R2">2</td>
+
+				<td id="M4R3">3</td>
+
+				<td id="M4R4">4</td>
+
+				<td id="M4R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W4S1">1</td>
+
+				<td id="W4S2">2</td>
+
+				<td id="W4S3">3</td>
+
+				<td id="W4S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W4I1">1</td>
+
+				<td id="W4I2">2</td>
+
+				<td id="W4I3">3</td>
+
+				<td id="W4I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W4D1">1</td>
+
+				<td id="W4D2">2</td>
+
+				<td id="W4D3">3</td>
+
+				<td id="W4D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F4S1">1</td>
+
+				<td id="F4S2">2</td>
+
+				<td id="F4S3">3</td>
+
+				<td id="F4S4">4</td>
+
+				<td id="F4S5">5</td>
+
+				<td id="F4S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F4B1">1</td>
+
+				<td id="F4B2">2</td>
+
+				<td id="F4B3">3</td>
+
+				<td id="F4B4">4</td>
+
+				<td id="F4B5">5</td>
+
+				<td id="F4B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F4R1">1</td>
+
+				<td id="F4R2">2</td>
+
+				<td id="F4R3">3</td>
+
+				<td id="F4R4">4</td>
+
+				<td id="F4R5">5</td>
+
+				<td id="F4R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M5S1">1</td>
+
+				<td id="M5S2">2</td>
+
+				<td id="M5S3">3</td>
+
+				<td id="M5S4">4</td>
+
+				<td id="M5S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M5B1">1</td>
+
+				<td id="M5B2">2</td>
+
+				<td id="M5B3">3</td>
+
+				<td id="M5B4">4</td>
+
+				<td id="M5B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M5R1">1</td>
+
+				<td id="M5R2">2</td>
+
+				<td id="M5R3">3</td>
+
+				<td id="M5R4">4</td>
+
+				<td id="M5R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W5S1">1</td>
+
+				<td id="W5S2">2</td>
+
+				<td id="W5S3">3</td>
+
+				<td id="W5S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W5I1">1</td>
+
+				<td id="W5I2">2</td>
+
+				<td id="W5I3">3</td>
+
+				<td id="W5I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W5D1">1</td>
+
+				<td id="W5D2">2</td>
+
+				<td id="W5D3">3</td>
+
+				<td id="W5D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F5S1">1</td>
+
+				<td id="F5S2">2</td>
+
+				<td id="F5S3">3</td>
+
+				<td id="F5S4">4</td>
+
+				<td id="F5S5">5</td>
+
+				<td id="F5S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F5B1">1</td>
+
+				<td id="F5B2">2</td>
+
+				<td id="F5B3">3</td>
+
+				<td id="F5B4">4</td>
+
+				<td id="F5B5">5</td>
+
+				<td id="F5B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F5R1">1</td>
+
+				<td id="F5R2">2</td>
+
+				<td id="F5R3">3</td>
+
+				<td id="F5R4">4</td>
+
+				<td id="F5R5">5</td>
+
+				<td id="F5R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M6S1">1</td>
+
+				<td id="M6S2">2</td>
+
+				<td id="M6S3">3</td>
+
+				<td id="M6S4">4</td>
+
+				<td id="M6S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M6B1">1</td>
+
+				<td id="M6B2">2</td>
+
+				<td id="M6B3">3</td>
+
+				<td id="M6B4">4</td>
+
+				<td id="M6B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M6R1">1</td>
+
+				<td id="M6R2">2</td>
+
+				<td id="M6R3">3</td>
+
+				<td id="M6R4">4</td>
+
+				<td id="M6R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W6S1">1</td>
+
+				<td id="W6S2">2</td>
+
+				<td id="W6S3">3</td>
+
+				<td id="W6S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W6I1">1</td>
+
+				<td id="W6I2">2</td>
+
+				<td id="W6I3">3</td>
+
+				<td id="W6I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W6D1">1</td>
+
+				<td id="W6D2">2</td>
+
+				<td id="W6D3">3</td>
+
+				<td id="W6D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F6S1">1</td>
+
+				<td id="F6S2">2</td>
+
+				<td id="F6S3">3</td>
+
+				<td id="F6S4">4</td>
+
+				<td id="F6S5">5</td>
+
+				<td id="F6S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F6B1">1</td>
+
+				<td id="F6B2">2</td>
+
+				<td id="F6B3">3</td>
+
+				<td id="F6B4">4</td>
+
+				<td id="F6B5">5</td>
+
+				<td id="F6B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F6R1">1</td>
+
+				<td id="F6R2">2</td>
+
+				<td id="F6R3">3</td>
+
+				<td id="F6R4">4</td>
+
+				<td id="F6R5">5</td>
+
+				<td id="F6R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M7S1">1</td>
+
+				<td id="M7S2">2</td>
+
+				<td id="M7S3">3</td>
+
+				<td id="M7S4">4</td>
+
+				<td id="M7S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M7B1">1</td>
+
+				<td id="M7B2">2</td>
+
+				<td id="M7B3">3</td>
+
+				<td id="M7B4">4</td>
+
+				<td id="M7B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M7R1">1</td>
+
+				<td id="M7R2">2</td>
+
+				<td id="M7R3">3</td>
+
+				<td id="M7R4">4</td>
+
+				<td id="M7R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W7S1">1</td>
+
+				<td id="W7S2">2</td>
+
+				<td id="W7S3">3</td>
+
+				<td id="W7S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W7I1">1</td>
+
+				<td id="W7I2">2</td>
+
+				<td id="W7I3">3</td>
+
+				<td id="W7I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W7D1">1</td>
+
+				<td id="W7D2">2</td>
+
+				<td id="W7D3">3</td>
+
+				<td id="W7D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F7S1">1</td>
+
+				<td id="F7S2">2</td>
+
+				<td id="F7S3">3</td>
+
+				<td id="F7S4">4</td>
+
+				<td id="F7S5">5</td>
+
+				<td id="F7S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F7B1">1</td>
+
+				<td id="F7B2">2</td>
+
+				<td id="F7B3">3</td>
+
+				<td id="F7B4">4</td>
+
+				<td id="F7B5">5</td>
+
+				<td id="F7B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F7R1">1</td>
+
+				<td id="F7R2">2</td>
+
+				<td id="F7R3">3</td>
+
+				<td id="F7R4">4</td>
+
+				<td id="F7R5">5</td>
+
+				<td id="F7R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M8S1">1</td>
+
+				<td id="M8S2">2</td>
+
+				<td id="M8S3">3</td>
+
+				<td id="M8S4">4</td>
+
+				<td id="M8S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M8B1">1</td>
+
+				<td id="M8B2">2</td>
+
+				<td id="M8B3">3</td>
+
+				<td id="M8B4">4</td>
+
+				<td id="M8B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M8R1">1</td>
+
+				<td id="M8R2">2</td>
+
+				<td id="M8R3">3</td>
+
+				<td id="M8R4">4</td>
+
+				<td id="M8R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W8S1">1</td>
+
+				<td id="W8S2">2</td>
+
+				<td id="W8S3">3</td>
+
+				<td id="W8S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W8I1">1</td>
+
+				<td id="W8I2">2</td>
+
+				<td id="W8I3">3</td>
+
+				<td id="W8I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W8D1">1</td>
+
+				<td id="W8D2">2</td>
+
+				<td id="W8D3">3</td>
+
+				<td id="W8D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F8S1">1</td>
+
+				<td id="F8S2">2</td>
+
+				<td id="F8S3">3</td>
+
+				<td id="F8S4">4</td>
+
+				<td id="F8S5">5</td>
+
+				<td id="F8S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F8B1">1</td>
+
+				<td id="F8B2">2</td>
+
+				<td id="F8B3">3</td>
+
+				<td id="F8B4">4</td>
+
+				<td id="F8B5">5</td>
+
+				<td id="F8B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F8R1">1</td>
+
+				<td id="F8R2">2</td>
+
+				<td id="F8R3">3</td>
+
+				<td id="F8R4">4</td>
+
+				<td id="F8R5">5</td>
+
+				<td id="F8R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M9S1">1</td>
+
+				<td id="M9S2">2</td>
+
+				<td id="M9S3">3</td>
+
+				<td id="M9S4">4</td>
+
+				<td id="M9S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M9B1">1</td>
+
+				<td id="M9B2">2</td>
+
+				<td id="M9B3">3</td>
+
+				<td id="M9B4">4</td>
+
+				<td id="M9B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M9R1">1</td>
+
+				<td id="M9R2">2</td>
+
+				<td id="M9R3">3</td>
+
+				<td id="M9R4">4</td>
+
+				<td id="M9R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W9S1">1</td>
+
+				<td id="W9S2">2</td>
+
+				<td id="W9S3">3</td>
+
+				<td id="W9S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W9I1">1</td>
+
+				<td id="W9I2">2</td>
+
+				<td id="W9I3">3</td>
+
+				<td id="W9I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W9D1">1</td>
+
+				<td id="W9D2">2</td>
+
+				<td id="W9D3">3</td>
+
+				<td id="W9D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F9S1">1</td>
+
+				<td id="F9S2">2</td>
+
+				<td id="F9S3">3</td>
+
+				<td id="F9S4">4</td>
+
+				<td id="F9S5">5</td>
+
+				<td id="F9S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F9B1">1</td>
+
+				<td id="F9B2">2</td>
+
+				<td id="F9B3">3</td>
+
+				<td id="F9B4">4</td>
+
+				<td id="F9B5">5</td>
+
+				<td id="F9B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F9R1">1</td>
+
+				<td id="F9R2">2</td>
+
+				<td id="F9R3">3</td>
+
+				<td id="F9R4">4</td>
+
+				<td id="F9R5">5</td>
+
+				<td id="F9R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M10S1">1</td>
+
+				<td id="M10S2">2</td>
+
+				<td id="M10S3">3</td>
+
+				<td id="M10S4">4</td>
+
+				<td id="M10S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M10B1">1</td>
+
+				<td id="M10B2">2</td>
+
+				<td id="M10B3">3</td>
+
+				<td id="M10B4">4</td>
+
+				<td id="M10B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M10R1">1</td>
+
+				<td id="M10R2">2</td>
+
+				<td id="M10R3">3</td>
+
+				<td id="M10R4">4</td>
+
+				<td id="M10R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W10S1">1</td>
+
+				<td id="W10S2">2</td>
+
+				<td id="W10S3">3</td>
+
+				<td id="W10S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W10I1">1</td>
+
+				<td id="W10I2">2</td>
+
+				<td id="W10I3">3</td>
+
+				<td id="W10I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W10D1">1</td>
+
+				<td id="W10D2">2</td>
+
+				<td id="W10D3">3</td>
+
+				<td id="W10D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F10S1">1</td>
+
+				<td id="F10S2">2</td>
+
+				<td id="F10S3">3</td>
+
+				<td id="F10S4">4</td>
+
+				<td id="F10S5">5</td>
+
+				<td id="F10S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F10B1">1</td>
+
+				<td id="F10B2">2</td>
+
+				<td id="F10B3">3</td>
+
+				<td id="F10B4">4</td>
+
+				<td id="F10B5">5</td>
+
+				<td id="F10B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F10R1">1</td>
+
+				<td id="F10R2">2</td>
+
+				<td id="F10R3">3</td>
+
+				<td id="F10R4">4</td>
+
+				<td id="F10R5">5</td>
+
+				<td id="F10R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M11S1">1</td>
+
+				<td id="M11S2">2</td>
+
+				<td id="M11S3">3</td>
+
+				<td id="M11S4">4</td>
+
+				<td id="M11S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M11B1">1</td>
+
+				<td id="M11B2">2</td>
+
+				<td id="M11B3">3</td>
+
+				<td id="M11B4">4</td>
+
+				<td id="M11B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M11R1">1</td>
+
+				<td id="M11R2">2</td>
+
+				<td id="M11R3">3</td>
+
+				<td id="M11R4">4</td>
+
+				<td id="M11R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W11S1">1</td>
+
+				<td id="W11S2">2</td>
+
+				<td id="W11S3">3</td>
+
+				<td id="W11S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W11I1">1</td>
+
+				<td id="W11I2">2</td>
+
+				<td id="W11I3">3</td>
+
+				<td id="W11I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W11D1">1</td>
+
+				<td id="W11D2">2</td>
+
+				<td id="W11D3">3</td>
+
+				<td id="W11D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F11S1">1</td>
+
+				<td id="F11S2">2</td>
+
+				<td id="F11S3">3</td>
+
+				<td id="F11S4">4</td>
+
+				<td id="F11S5">5</td>
+
+				<td id="F11S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F11B1">1</td>
+
+				<td id="F11B2">2</td>
+
+				<td id="F11B3">3</td>
+
+				<td id="F11B4">4</td>
+
+				<td id="F11B5">5</td>
+
+				<td id="F11B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F11R1">1</td>
+
+				<td id="F11R2">2</td>
+
+				<td id="F11R3">3</td>
+
+				<td id="F11R4">4</td>
+
+				<td id="F11R5">5</td>
+
+				<td id="F11R6">6</td>
+			</tr>
+		</table>
+		<hr>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="M12S1">1</td>
+
+				<td id="M12S2">2</td>
+
+				<td id="M12S3">3</td>
+
+				<td id="M12S4">4</td>
+
+				<td id="M12S5">5</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="M12B1">1</td>
+
+				<td id="M12B2">2</td>
+
+				<td id="M12B3">3</td>
+
+				<td id="M12B4">4</td>
+
+				<td id="M12B5">5</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="M12R1">1</td>
+
+				<td id="M12R2">2</td>
+
+				<td id="M12R3">3</td>
+
+				<td id="M12R4">4</td>
+
+				<td id="M12R5">5</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="W12S1">1</td>
+
+				<td id="W12S2">2</td>
+
+				<td id="W12S3">3</td>
+
+				<td id="W12S4">4</td>
+			</tr>
+
+			<tr>
+				<td>Incline</td>
+
+				<td id="W12I1">1</td>
+
+				<td id="W12I2">2</td>
+
+				<td id="W12I3">3</td>
+
+				<td id="W12I4">4</td>
+			</tr>
+
+			<tr>
+				<td>Deadlift</td>
+
+				<td id="W12D1">1</td>
+
+				<td id="W12D2">2</td>
+
+				<td id="W12D3">3</td>
+
+				<td id="W12D4">4</td>
+			</tr>
+		</table><br>
+
+		<table>
+			<tr>
+				<td>Exercise</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>5 Reps</td>
+
+				<td>3 Reps</td>
+
+				<td>8 Reps</td>
+			</tr>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="F12S1">1</td>
+
+				<td id="F12S2">2</td>
+
+				<td id="F12S3">3</td>
+
+				<td id="F12S4">4</td>
+
+				<td id="F12S5">5</td>
+
+				<td id="F12S6">6</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="F12B1">1</td>
+
+				<td id="F12B2">2</td>
+
+				<td id="F12B3">3</td>
+
+				<td id="F12B4">4</td>
+
+				<td id="F12B5">5</td>
+
+				<td id="F12B6">6</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="F12R1">1</td>
+
+				<td id="F12R2">2</td>
+
+				<td id="F12R3">3</td>
+
+				<td id="F12R4">4</td>
+
+				<td id="F12R5">5</td>
+
+				<td id="F12R6">6</td>
+			</tr>
+		</table>
+
+		<table>
+			<th>
+				<td>One rep Max Projected (Main Lifts)</td>
+			</th>
+
+			<tr>
+				<td>Squat</td>
+
+				<td id="FinalSquat">0</td>
+			</tr>
+
+			<tr>
+				<td>Bench</td>
+
+				<td id="FinalBench">0</td>
+			</tr>
+
+			<tr>
+				<td>Row</td>
+
+				<td id="FinalRow">0</td>
+			</tr>
+
+		</table>
+		<hr>
+	</div>
+</body>
+</html>
